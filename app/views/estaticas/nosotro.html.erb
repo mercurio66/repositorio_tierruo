@@ -1,2 +1,12 @@
 <h1>Estaticas#nosotro</h1>
 <p>Find me in app/views/estaticas/nosotro.html.erb</p>
+
+<%= @mensaje %>
+<br>
+<%= "El controlador dice #{@mensaje}" %>
+<ul>
+  <% @usuarios.each do |i| %>
+  <%= "<li>#{i}</li>".html_safe %>
+  <% end %>
+</ul>
+
